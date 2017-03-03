@@ -26,8 +26,8 @@ fi
 
 
 ################################################################[ GIT ]#########
-echo "1st things 1st... (preconf based on https://github.com/thoughtbot/laptop)"
-$DOTFILES_DIR/git/git.sh
+# echo "1st things 1st... (preconf based on https://github.com/thoughtbot/laptop)"
+# $DOTFILES_DIR/git/git.sh
 
 
 ################################################################[ Basic SW ]####

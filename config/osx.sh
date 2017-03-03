@@ -141,8 +141,11 @@ defaults write com.apple.dock showAppExposeGestureEnabled -bool true
 # Reset Launchpad
 find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
 
-
-# Finder
+:how all filename extensions
+149 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+150
+151 # Finder: show full path in title bar
+152 defaults write com.apple.finder _FXShowPosixPathInTitleinder
 # ----------------------------------------------------------------------
 
 # Finder: show all filename extensions
@@ -183,7 +186,7 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
 # Save to disk (not to iCloud) by default
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 # Automatically quit printer app once the print jobs complete
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
