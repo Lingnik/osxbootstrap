@@ -64,7 +64,10 @@ echo "Installing dev tools..."
   #brew install imagemagick
   #brew install graphviz
   #brew cask install sourcetree
+  brew install wget
   brew cask install iterm2
+  brew tap ravenac95/sudolikeaboss
+  brew install sudolikeaboss
   brew cask install pycharm
   brew cask install google-cloud-sdk
   brew cask install docker
@@ -73,6 +76,7 @@ echo "Installing dev tools..."
   brew cask install kube-solo
   brew install kubectl
   brew cask install kitematic
+  brew install go
   #brew install postgresql
   #brew install readline
 
@@ -81,3 +85,10 @@ echo "Installing dev tools..."
 #   curl -OL http://mirror.ctan.org/systems/mac/mactex/MacTeX.pkg > ~/Downloads/MacTeX.pkg
 #   # assuming its future installation... :P
 #   echo "export PATH=\$PATH:/usr/texbin" >> ~/.zshrc
+
+pushd ~/Downloads
+wget https://github.com/ravenac95/sudolikeaboss/files/615148/sudolikeaboss_0.3.0-beta1_darwin_amd64.zip
+unzip sudolikeaboss*.zip
+mv -f sudolikeaboss /usr/local/bin/
+sudolikeaboss register
+popd
