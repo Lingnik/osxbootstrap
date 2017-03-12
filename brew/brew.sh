@@ -56,6 +56,9 @@ echo "Installing essential software..."
   brew cask install slack
   brew cask install fantastical
   brew cask install rescuetime
+  brew cask install viscosity
+  brew cask install nosleep
+  brew cask install keepingyouawake
 
 echo "Installing dev tools..."
   #brew install cmake
@@ -64,6 +67,7 @@ echo "Installing dev tools..."
   #brew install imagemagick
   #brew install graphviz
   #brew cask install sourcetree
+  brew install mosh
   brew install wget
   brew cask install iterm2
   brew tap ravenac95/sudolikeaboss
@@ -77,6 +81,12 @@ echo "Installing dev tools..."
   brew install kubectl
   brew cask install kitematic
   brew install go
+  brew install pyenv pyenv-virtualenv pyenv-virtualenvwrapper
+  pyenv install 2.7.2
+  pyenv install 2.7.8
+  brew install bash-completion
+  pyenv install 2.7.13
+  pyenv install 3.6.0
   #brew install postgresql
   #brew install readline
 
