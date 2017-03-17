@@ -96,7 +96,17 @@ defaults write com.apple.BezelServices kDimTime -int 300
 # Dock
 # ----------------------------------------------------------------------
 
-# Set the icon size of Dock items to 36 pixels
+# Set the icon size of Doc knd save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+
+# Expand print panel by default
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+
+# Disable the "Are you sure you want to open this application?" dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3items to 36 pixels
 defaults write com.apple.dock tilesize -int 50
 
 # Dock: don’t animate opening applications

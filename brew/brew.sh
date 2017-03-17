@@ -23,9 +23,9 @@ echo "Upda-grading Homebrew..."
   successfully brew upgrade
 
 ################################################################[ SW inst ]#####
-echo "Hipsterizing your terminal with homebrewed zsh + Oh my zsh!"
-  successfully brew install zsh
-  successfully curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+#echo "Hipsterizing your terminal with homebrewed zsh + Oh my zsh!"
+#  successfully brew install zsh
+#  successfully curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 echo "Dehipsterize with updated bash"
   successfully brew install bash
@@ -43,8 +43,12 @@ echo "Updating some tools..."
   brew install unrar
 
 echo "Installing essential software..."
+  brew cask install nosleep
+  brew cask install keepingyouawake
   #export HOMEBREW_CASK_OPTS="--appdir=/Applications"
   brew cask install dropbox
+  brew cask install 1password
+  brew cask install expandrive
   #brew cask install the-unarchiver
   brew cask install google-chrome
   brew cask install vlc
@@ -57,8 +61,6 @@ echo "Installing essential software..."
   brew cask install fantastical
   brew cask install rescuetime
   brew cask install viscosity
-  brew cask install nosleep
-  brew cask install keepingyouawake
 
 echo "Installing dev tools..."
   #brew install cmake
