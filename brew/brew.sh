@@ -49,6 +49,7 @@ echo "Installing essential software..."
   brew cask install dropbox
   brew cask install 1password
   brew cask install expandrive
+  brew cask install private-internet-access
   #brew cask install the-unarchiver
   brew cask install google-chrome
   brew cask install vlc
